@@ -1,12 +1,13 @@
 class Fighter
 
 	attr_reader :name
-	attr_accessor  :health, :power
+	attr_accessor  :health, :power; :food
 
-	def initialize(name, health, power)
+	def initialize(name, health, power, food)
 		@name = name
 		@health = health
 		@power = power
+		@food = food
 	end
 
 	def attack(enemy)
